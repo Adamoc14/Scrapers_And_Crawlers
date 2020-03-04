@@ -1,0 +1,19 @@
+For this pizza ordering code to work , you must first have 
+1) Google Chrome installed
+2) Google Chrome Webdriver installed(this depends on version of chrome you are using)
+    - If using the normal Chrome and not dev version , it can be downloaded here - https://chromedriver.chromium.org/downloads
+    - If using the dev version of Chrome (higher versions than stated on website above , still in beta . Be warned they may         break due to still being in beta ) it can be downloaded from here - https://chromedriver.chromium.org/chromedriver-           canary 
+    
+if and when they're installed,  you must update the following lines to their respective PATHS
+
+# For The Location Of The Google Chrome Application
+options = webdriver.ChromeOptions()
+(MAC VERSION)
+options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" 
+(WINDOWS VERSION)
+options.binary_location = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" 
+
+# For The Location Of The Chromedriver.exe file
+chromedriver = 'YOUR_SPECIFIED_PATH_TO_DOWNLOAD_LOCATION'
+
+Then the code should work as indicated. 
